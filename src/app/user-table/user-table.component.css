@@ -1,8 +1,12 @@
 th {
-    text-align: left;
-  }
-  
-  th,td {
-    padding: 15px;
-  }
-  
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+full-width {
+    width:100%
+}
