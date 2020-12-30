@@ -1,0 +1,20 @@
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>UserName</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr *ngFor="let user of userList | async;" (click)="showName(user)">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.company.name}}</td>
+            <td>{{user.phone}}</td>
+        </tr>
+    </table>
+</div>
